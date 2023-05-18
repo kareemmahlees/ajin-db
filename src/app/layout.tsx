@@ -1,8 +1,7 @@
 import Nav from "@/components/Nav";
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Source_Code_Pro } from "next/font/google";
 import Providers from "./providers";
-import { Divider } from "@chakra-ui/react";
 import StarGithubBadge from "@/components/StarGithubBadge";
 
 const inter = Inter({ subsets: ["latin"] });
