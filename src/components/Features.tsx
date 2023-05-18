@@ -44,7 +44,7 @@ const Features: FC = ({}) => {
             <ImagePlus size={55} />
           </FeatureCard>
         </div>
-        <div className="mt-9 flex items-center justify-center">
+        <div className="mt-9 flex items-center justify-center text-gray-600">
           <ArrowDownIcon
             fontSize={"4xl"}
             className="transition hover:translate-y-4"

@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="favicon" href="/confused.png" type="image/x-icon" />
+      <link rel="shortcut icon" href="/confused.png" type="image/x-icon" />
       <body className={inter.className}>
         <Providers>
           <Nav />
