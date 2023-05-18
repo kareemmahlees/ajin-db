@@ -5,7 +5,7 @@ import React, { FC } from "react";
 
 const Features: FC = ({}) => {
   return (
-    <section className="mx-[100px] mt-20 flex flex-col items-center gap-5">
+    <section className="mt-20 flex flex-col items-center gap-5">
       <div className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-gradient-to-r from-[#c563f4] to-[#e863ef] text-3xl font-bold text-white">
         2
       </div>
@@ -18,7 +18,7 @@ const Features: FC = ({}) => {
             AjinDB ships with a variety of built in tooling
           </p>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-5">
+        <div className="grid grid-cols-1 grid-rows-2 gap-5 sm:grid-cols-2">
           <FeatureCard
             title="Your Schema, Your Migrations"
             description="Create and manage your migrations without the need of external tools, AjinDB already has it."

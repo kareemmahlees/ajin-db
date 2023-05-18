@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <Nav />
-          {/* <StarGithubBadge /> */}
+          <StarGithubBadge />
           {children}
         </Providers>
       </body>

@@ -10,12 +10,18 @@ export default function Home() {
   return (
     <>
       <Landing />
-      <CodeExample />
+      <div className="mx-[10px] sm:mx-[30px] md:mx-[60px] lg:mx-[100px]">
+        <CodeExample />
+      </div>
       <Langauges />
-      <Features />
-      <Metrics />
+      <div className="mx-[10px] sm:mx-[30px] md:mx-[60px] lg:mx-[100px]">
+        <Features />
+        <Metrics />
+      </div>
       <RunningExample />
-      <Footer />
+      <div className="mx-[10px] sm:mx-[30px] md:mx-[60px] lg:mx-[100px]">
+        <Footer />
+      </div>
     </>
   );
 }

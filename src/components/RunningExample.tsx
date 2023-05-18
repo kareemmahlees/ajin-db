@@ -6,7 +6,7 @@ const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
 const RunningExample: FC = ({}) => {
   return (
     <div className="mt-60 flex w-full justify-center bg-black py-40 text-white ">
-      <div className="flex flex-col items-start space-y-6">
+      <div className="flex flex-col items-center space-y-6 text-center sm:items-start sm:text-left">
         <h2 className="text-4xl font-bold">Get up and running in seconds</h2>
         <p className="text-2xl text-gray-400">AjinDB requires NodeJs 13+</p>
         <h4 className="text-3xl font-bold">

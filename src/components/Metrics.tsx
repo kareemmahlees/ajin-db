@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Metrics: FC = ({}) => {
   return (
-    <div className="mx-[150px] mt-20 flex  flex-col items-center space-y-7 rounded-lg bg-black p-8">
+    <div className="mt-20 flex flex-col items-center space-y-7 rounded-lg bg-black p-8">
       <h2 className="text-3xl font-bold text-white">
         Join the growing{" "}
         <span className="bg-gradient-to-r from-[#f55e55] to-[#f6ae62] bg-clip-text text-transparent">
@@ -10,7 +10,7 @@ const Metrics: FC = ({}) => {
         </span>{" "}
         community of AjinDB developers
       </h2>
-      <div className="flex items-center gap-5">
+      <div className="flex flex-col items-center gap-5 sm:flex-row">
         <MetricCard title="3000+" description="Projects with AjinDB" />
         <MetricCard title="8000+" description="Github Stars" />
         <MetricCard title="1000+" description="Discord community members" />

@@ -4,7 +4,7 @@ import { FC } from "react";
 
 const Footer: FC = ({}) => {
   return (
-    <footer className="mx-[100px] my-20 space-y-20 text-gray-500">
+    <footer className="my-20 space-y-20 text-gray-500">
       <div className="flex items-start justify-between">
         <Image alt="logo" src={"/confused.png"} width={64} height={64} />
         <div className="flex flex-col items-start gap-1">

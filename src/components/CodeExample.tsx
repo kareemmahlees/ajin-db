@@ -1,13 +1,13 @@
-import { FC } from "react";
+import { FC, HTMLAttributes } from "react";
 import { Zap } from "lucide-react";
 import Image from "next/image";
 
-interface CodeExampleProps {}
+interface CodeExampleProps extends HTMLAttributes<HTMLDivElement> {}
 
 const CodeExample: FC<CodeExampleProps> = ({}) => {
   return (
-    <div className="mx-[100px] mt-12 space-y-6">
-      <div className="flex items-center space-x-32 ">
+    <div className="mt-12 space-y-6">
+      <div className="flex flex-col items-center space-y-5 sm:flex-col sm:space-y-5 md:flex-row md:space-x-32">
         <div className="flex basis-1/2 flex-col items-start gap-7">
           <Zap width={64} height={64} />
           <h2 className="text-3xl font-bold">Plazingly Fast.</h2>
@@ -34,7 +34,7 @@ const CodeExample: FC<CodeExampleProps> = ({}) => {
             AjinDB is compatible with a variety of languages
           </p>
         </div>
-        <div className="basis-1/2">
+        <div className="sm:basis-0 md:basis-1/2">
           <Image
             alt="code example"
             src={"/code.png"}

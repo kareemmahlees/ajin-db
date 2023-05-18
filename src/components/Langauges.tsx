@@ -27,11 +27,11 @@ const Langauges: FC = ({}) => {
           <h3 className="text-center text-3xl font-bold text-black">
             Bring the tools you want.
           </h3>
-          <p className="text-xl">
+          <p className="break-all text-xl">
             AjinDB is compatable with whatever language that comes to your mind
           </p>
         </div>
-        <div className=" mt-9 grid grid-flow-row grid-cols-4 gap-5 ">
+        <div className=" mt-9 grid grid-flow-row grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {Object.entries(languagesEmbeds).map((lang) => {
             let i = 1;
             return (
