@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { FC } from "react";
-import { Divider } from "@chakra-ui/react";
 import Link from "next/link";
 
 interface NavProps {}
@@ -9,8 +8,8 @@ interface NavProps {}
 const Nav: FC<NavProps> = ({}) => {
   return (
     <>
-      <nav className="fixed w-full flex justify-center bg-white z-50">
-        <div className="flex items-center justify-between w-11/12 p-3">
+      <nav className="fixed z-50 flex w-full justify-center border-b-[1px] border-gray-300 bg-white">
+        <div className="flex w-11/12 items-center justify-between p-3">
           <Link href={"/"}>
             <div className="flex items-center gap-5">
               <Image
@@ -19,7 +18,7 @@ const Nav: FC<NavProps> = ({}) => {
                 width={40}
                 height={40}
               />
-              <h3 className="font-bold text-2xl text-slate-900">AjinDB</h3>
+              <h3 className="text-2xl font-bold text-slate-900">AjinDB</h3>
             </div>
           </Link>
           <ul className="flex items-center gap-5">
@@ -29,7 +28,10 @@ const Nav: FC<NavProps> = ({}) => {
               </Link>
             </li>
             <li>
-              <Link href={"https://github.com/kareemmahlees/ajin-db"}>
+              <Link
+                href={"https://github.com/kareemmahlees/ajin-db"}
+                target="_blank"
+              >
                 <Image
                   alt="github icon"
                   src={"/github.png"}
@@ -41,7 +43,6 @@ const Nav: FC<NavProps> = ({}) => {
           </ul>
         </div>
       </nav>
-      <Divider color={"black"} />
     </>
   );
 };
