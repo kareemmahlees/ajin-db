@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.head-img {
+  background-image: linear-gradient(to top, white, transparent, white),
+    url("../../public/vector-bg.jpg");
+}
