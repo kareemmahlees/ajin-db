@@ -20,6 +20,7 @@ const Landing: FC<LandingProps> = ({}) => {
             placeholder="Your email address..."
             width={"50"}
             isInvalid={valid}
+            value={value}
             onChange={(e) => {
               setValue(e.target.value);
             }}
@@ -30,6 +31,7 @@ const Landing: FC<LandingProps> = ({}) => {
                 setValid(true);
               } else {
                 setValid(false);
+                setValue("");
                 toast({
                   title: "You have been waitlisted",
                   description: "You can now safely wait forever",
